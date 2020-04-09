@@ -9,7 +9,9 @@ const Creditos = require('../models/Creditos');
 const contras = "JDhd950402-*/#$%04286482762111dhAD#d06845620178%$102687JdHd020495dDAhd*#&%"
 let token = {}
 let id = ''
-
+router.get('/',(req, res)=>{
+    res.status(200).send('hola mundo');
+});
 router.post('/cuentaCreditos', async (req,res) => {
     const vars = validacionUsuario(req.body)
     //se supone que se debe guardarlos datos decodifcados en la base de datos
